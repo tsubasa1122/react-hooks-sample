@@ -1,8 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const EventForm = () => {
-
-  const [state, dispatch] = useReducer(reducer, []);
+const EventForm = ({ state, dispatch }) => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
 
@@ -47,3 +45,5 @@ const EventForm = () => {
     </>
   )
 }
+
+export default EventForm;
